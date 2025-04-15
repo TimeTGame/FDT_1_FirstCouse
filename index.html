@@ -1,36 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body class="bg">
     <div>
         <header class="container">
-            <img src="./pic/Anonymous Mask.png" alt="logo" class="logo">
-            <nav class="menu">
-                <ul>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">Тарифы</a></li>
-                    <li><a href="">Блог</a></li>
-                    <li><a href="">Записаться</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-            </nav>
+            <div id="header">
+                <img src="./pic/Anonymous Mask.png" alt="logo" class="logo">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#about-us">О нас</a></li>
+                        <li><a href="#catalog">Тарифы</a></li>
+                        <li><a href="#blog">Блог</a></li>
+                        <li><a href="#reg">Записаться</a></li>
+                        <li><a href="#footer">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
             <section id="cover">
-                <div class="container cover-content">
-                    <h1>Получите востребованную профессию прямо сейчас</h1>
-                    <input type="text">
-                    <input type="text">
-                    <button>Оставить заявку</button>
+                <div class="vanish-bg">
+                    <div class="container cover-content">
+                        <h1>Получите востребованную профессию прямо сейчас</h1>
+                        <input type="text" placeholder="ФИО" class="name">
+                        <input type="text" placeholder="Номер телефона" class="phone">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about-us">
+                <div class="container us-content">
+                    <div class="vanish-us-bg">
+                        <img src="/pic/Pentester.png" alt="Us">
+                    </div>
+                    <div class="us-info">
+                        <h2>О нас</h2>
+                        <p>Мы - группа специалистов пентеста находящихся на рынке профессий уже долгое время.
+                            Предоставляем услуги обучения востребованной профессии. Наша цель - обучить искусству
+                            пентеста всех желающих. Многие из прошедших наш курс уже получили высокие должности и начали
+                            зарабатывать.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="catalog">
+                <div class="container">
+                    <div class="block-description">
+                        <h2>Тарифы</h2>
+                        <p>Тарифные планы</p>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="pic/OSINT.png" alt="" class="card_img">
+                            <div class="card-description">
+                                <div class="product-info">
+                                    <h3 class="product-name">OSINT разведка</h3>
+                                    <h3 class="product-cost">15000 Руб.</h3>
+                                </div>
+                                <p>Поиск по открытым источникам</p>
+                                <button>Купить курс</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/Attack.jpg" alt="" class="card_img">
+                            <div class="card-description">
+                                <div class="product-info">
+                                    <h3 class="product-name">Симуляция атаки</h3>
+                                    <h3 class="product-cost">20000 Руб.</h3>
+                                </div>
+                                <p>Обучение проведению атак</p>
+                                <button>Купить курс</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="pic/Protect.jpg" alt="" class="card_img">
+                            <div class="card-description">
+                                <div class="product-info">
+                                    <h3 class="product-name">Защита от атак/h3>
+                                    <h3 class="product-cost">20000 Руб.</h3>
+                                </div>
+                                <p>Обучение защите от атак</p>
+                                <button>Купить курс</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="form">
+                <div class="vanish-form-bg">
+                    <div class="container">
+                        <h2>Начните свой путь специалиста прямо сейчас</h2>
+                        <input type="text" placeholder="ФИО" class="name">
+                        <input type="text" placeholder="Номер телефона" class="phone">
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog">
+                <div class="container">
+                    <div class="blog-info">
+                        <h2>Блог</h2>
+                        <p>Полезнае статьи для ознакомления</p>
+                    </div>
+                    <div class="blog-cards">
+                        <div class="blog-card">
+                            <div class="blog-card-img">
+                                <img src="pic/Reverse.jpg" alt="Пентест: суровая реальность, которая распадает мечты новичков">
+                            </div>
+                            <div class="blog-card-info">
+                                <p>Пентест: суровая реальность, которая распадает мечты новичков</p>
+                                <button>Посмотреть</button>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-card-img">
+                                <img src="pic/Infrastructure Pentesting.jpg" alt="Инфраструктурный пентест по шагам: инструменты, методологии и разведка">
+                            </div>
+                            <div class="blog-card-info">
+                                <p>Инфраструктурный пентест по шагам: инструменты, методологии и разведка</p>
+                                <button>Посмотреть</button>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-card-img">
+                                <img src="pic/work_environment.jpg" alt="Пентесты: готовим рабочее окружение для атаки">
+                            </div>
+                            <div class="blog-card-info">
+                                <p>Пентесты: готовим рабочее окружение для атаки</p>
+                                <button>Посмотреть</button>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="blog-card-img">
+                                <img src="pic/Pentesting_101.jpg" alt="Pentesting 101: с чего начать">
+                            </div>
+                            <div class="blog-card-info">
+                                <p>Pentesting 101: с чего начать</p>
+                                <button>Посмотреть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reg">
+                <div class="vanish-bg">
+                    <div class="container cover-content">
+                        <h1>Может вы забыли, но у нас есть регистрация</h1>
+                        <input type="text" placeholder="ФИО" class="name">
+                        <input type="text" placeholder="Номер телефона" class="phone">
+                        <button>Оставить заявку</button>
+                    </div>
                 </div>
             </section>
         </main>
+        <footer id="footer">
+            <div class="container">
+                <img src="./pic/Anonymous Mask.png" alt="logo" class="logo">
+                <div class="footer-info">
+                    <div class="contacts">
+                        <p>Контакты:</p>
+                        <ul>
+                            <li>+7 777 777 77-77</li>
+                            <li>idkmail@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="social-goups">
+                        <p>Мы в социальных сетях</p>
+                        <ul>
+                            <li>Телеграм: @idktggroup</li>
+                            <li>ВК: https://vk.com/idkvkgroup</li>
+                        </ul>
+                    </div>
+            </div>
+        </footer>
     </div>
 </body>
+
 </html>
