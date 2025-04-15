@@ -83,7 +83,7 @@ h2 {
 
 #cover {
     height: 760px;
-    background-image: url(/pic/jokir.png);
+    background-image: url(./pic/jokir.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -210,7 +210,7 @@ h2 {
 
 #form {
     height: 626px;
-    background-image: url(/pic/Hackers.jpg);
+    background-image: url(./pic/Hackers.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 85px;
@@ -324,7 +324,7 @@ h2 {
 
 #reg {
     height: 760px;
-    background-image: url(/pic/reg_pic.jpg);
+    background-image: url(./pic/reg_pic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 85px;
